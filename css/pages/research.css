@@ -55,6 +55,16 @@
   .hcard .media .mglyph { width: 44px; height: 44px; }
 }
 
+/* ---------- Screenshot in a card ---------- */
+/* A figure under the card copy, showing a whole application window. */
+.hcard figure.shot { margin: 0 0 var(--spacing-16); }
+.hcard figure.shot a { display: block; }
+.hcard figure.shot img {
+  width: 100%; height: auto; display: block;
+  border: 1px solid var(--rule); border-radius: var(--radius-md); background: var(--paper);
+}
+.hcard figure.shot figcaption { margin-top: var(--spacing-6); font-size: var(--text-small); color: var(--ink-3); }
+
 /* ---------- Pipeline strip (4 stages of the vEM grant) ---------- */
 .pipe4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-12); list-style: none; margin: 0 0 clamp(20px, 3vw, 28px); }
 .pipe4 li {
